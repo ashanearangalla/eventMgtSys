@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+:root {
+    --lightpurple: #7091E6;
+    --darkblue:#3D52A0;
+    --silver: #f0edf6;
+    --hover: rgb(43, 43, 43);
+    --white: #ADBBDA;
+    --middle: #6d7fb1;
+    --main-color: #009ef9;
+}
+
+.navbar {
+    background: var(--darkblue);
+    color: #fff;
+    padding: 1.1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.heading {
+    float: left;
+    text-align: center;
+    padding-right: 20px;
+    padding: 0 20px;
+}
+
+.heading p{
+    font-size: 2.2rem;
+    color: var(--silver);
+    font-weight: 500;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 0.5rem;
+    font-size: 16px;
+    background: var(--lightpurple);
+    color: var(--darkblue);
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background: var(--silver);
+}
+
+.links {
+    float: right;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-item a {
+    font-size: 18px;
+    font-style: normal;
+    color: var(--silver);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+.nav-item a:hover {
+    background: var(--lightpurple);
+    color: #000080;
+    text-shadow: 2px 2px 8px #030303;
+}
+
+.events-display {
+    background-color: var(--middle);
+    padding: 0 0 50px 0;
+}
+
+/* Footer */
+.footer {
+    background: var(--darkblue);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+a {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(211, 211, 211);
+}
+
+/* selected link */
+a:active {
+    color: white;
+}
+
+/* Main content */
+main {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    background-color: var(--middle);
+}
+
+.receipt {
+    margin-top: 40px;
+    width: 800px;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.receipt-header {
+    text-align: center;
+    padding: 30px 20px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.receipt-header h1 {
+   
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-weight: 200;
+}
+
+.receipt-header h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.receipt-header p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.customer-details {
+    text-align: left;
+    margin: 20px 50px 10px 50px;
+}
+
+.customer-details h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.customer-details p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.receipt-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.ticket-details, .total-amount {
+    flex: 1;
+    margin-top: 20px;
+}
+
+.ticket-details h2, .total-amount h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ticket {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-radius: 5px;
+   
+    margin-bottom: 10px;
+}
+
+.ticket-info {
+    text-align: left;
+}
+
+.ticket-info p {
+    margin: 5px 0;
+}
+
+.ticket-price {
+    text-align: right;
+}
+
+.ticket-price p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.total-amount {
+    text-align: right;
+    margin-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.total-amount p {
+    font-size: 18px;
+ 
+    font-weight: 600;
+}
+
+#download {
+    padding: 15px 15px;
+    border: none;
+    background-color: var(--darkblue);
+    color: white;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width: 400px;
+}

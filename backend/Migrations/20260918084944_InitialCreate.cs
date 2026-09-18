@@ -38,6 +38,7 @@ namespace debraApp.Migrations
                     Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     RegisteredDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>

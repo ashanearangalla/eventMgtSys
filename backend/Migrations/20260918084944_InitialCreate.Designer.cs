@@ -12,7 +12,7 @@ using debraApp.DAL;
 namespace debraApp.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240708062425_InitialCreate")]
+    [Migration("20260918084944_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -160,6 +160,10 @@ namespace debraApp.Migrations
 
                     b.Property<DateTime>("RegisteredDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("PartnerID");
 

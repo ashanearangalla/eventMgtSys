@@ -6,6 +6,10 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var connStr = builder.Configuration.GetConnectionString("DefaultConnection");
+Console.WriteLine($"[DEBUG] ASPNETCORE_ENVIRONMENT = {builder.Environment.EnvironmentName}");
+Console.WriteLine($"[DEBUG] Connection string length = {connStr?.Length ?? -1}");
+
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddTransient<Seed>();
